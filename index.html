@@ -49,12 +49,19 @@
         </div>
 
         <div class="content">
-            <div class="filters">
+            <div class="filters" id="filtros">
                 <label for="category">Filter by Category</label>
-                <select name="" id="category"></select>
+                <select name="" id="category">
+                    <option value="Nature & Parks">Parks</option>
+                    <option value="Museums">Museums</option>
+                    <option value="Sights & Landmarks">Landmarks</option>
+                </select>
 
-                <label for="popularity">Filter by Category</label>
-                <select name="" id="popularity"></select>
+                <label for="popularity">Filter by Popularity</label>
+                <select name="" id="popularity">
+                    <option value="rating">Rating</option>
+                    <option value="num_reviews">Visits</option>
+                </select>
 
                 <label for="">Filter by Distance</label>
                 <input type="range">
@@ -70,7 +77,7 @@
                         </figure>
                         <p class="title"><strong></strong></p>
                         <p class="description"></p>
-                        <a href="details.html"></a>
+                        <a href="" class="more">See more</a>
                     </article>
                 </template>
 
@@ -84,7 +91,8 @@
         </footer>
 
     </div>
-    <script src="/js/index.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/index.js"></script>
     <script>
         loadPlace()
     </script>
