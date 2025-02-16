@@ -1,5 +1,5 @@
 //asyncronic function
-export async function loadPlace() {
+async function loadPlace() {
     console.log("downloading data....") //testing data
 
 
@@ -9,7 +9,7 @@ export async function loadPlace() {
     const options = {
         method: 'POST',
         headers: {
-            'x-rapidapi-key': 'f4f0970df7msh1ab4217c55cd832p1eb68ejsn0d6e7ee699ac',
+            'x-rapidapi-key': 'db121b7f58msh00824834efb239ep1c7638jsn9614ba6896aa',
             'x-rapidapi-host': 'tourist-attraction.p.rapidapi.com',
             'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -37,4 +37,4 @@ export async function loadPlace() {
     console.log("....downloaded data") // testing
 }
 
-//export default loadPlace;
+export default loadPlace;

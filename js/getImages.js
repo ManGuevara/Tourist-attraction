@@ -1,10 +1,10 @@
-export async function getImages(id){
-
+async function getImages(id){
+    console.log("Descargando Datos...")
     const url = 'https://tourist-attraction.p.rapidapi.com/photos'
     const options = {
         method: 'POST',
         headers: {
-            'x-rapidapi-key': 'f4f0970df7msh1ab4217c55cd832p1eb68ejsn0d6e7ee699ac',
+            'x-rapidapi-key': 'db121b7f58msh00824834efb239ep1c7638jsn9614ba6896aa',
             'x-rapidapi-host': 'tourist-attraction.p.rapidapi.com',
             'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -31,3 +31,4 @@ try {//intentamos
 }
  
 }
+export default getImages

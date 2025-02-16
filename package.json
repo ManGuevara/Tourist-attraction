@@ -1,0 +1,26 @@
+{
+  "name": "projecttourism",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManGuevara/Tourist-attraction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManGuevara/Tourist-attraction/issues"
+  },
+  "homepage": "https://github.com/ManGuevara/Tourist-attraction#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "globals": "^15.15.0"
+  }
+}

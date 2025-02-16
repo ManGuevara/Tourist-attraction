@@ -190,14 +190,17 @@ padding: 0 20px;
 
 .thumbnails1Site, .thumbnails2Site, .thumbnails3Site, .thumbnails4Site{
     display:none;
+    overflow: hidden;
 }
 
 .previewSite{
   grid-area: image;
+ 
 }
 
 .previewSite img{
     width: 100%;  
+    height: 250px;
 }
 
 .detailSite{
@@ -290,6 +293,10 @@ h1{
         "button button button button details";
         gap:10px;
     }
+    .previewSite img{
+        height: 400px;
+      }
+
 /* img thumbnails */
     .thumbnails{
         width:90%;

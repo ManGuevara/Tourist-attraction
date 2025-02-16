@@ -1,5 +1,5 @@
-import {obj} from "/lib.js"
-import {getImages} from "/getImages.js"
+import {obj} from "./lib.js"
+import getImages from "./getImages.js"
 
 
 
@@ -8,9 +8,10 @@ window.addEventListener("load" ,async (e)=>{
 const data =new URLSearchParams(window.location.search);
 
 //obtaining specific data 
-const  objJSON = JSON.parse(data.get("item"));
+const  objJSON = JSON.parse(data.get("item"))
 
 let phots = await getImages(objJSON.id);
+console.log(phots);
 
 obj("minA").src = phots.results.data[0].images.small.url;
 obj("minB").src = phots.results.data[1].images.small.url;

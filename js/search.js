@@ -1,5 +1,5 @@
 //function for filtering results
-export function filter(filtro, type =""){
+export function filter(filtro,places, type =""){
 
     let filtrado =[]
 

@@ -1,6 +1,6 @@
-import {obj} from '/lib.js'
-import { loadPlace } from '/loadPlace.js'
-import {filter} from '/search.js'
+import {obj} from './lib.js'
+import  loadPlace  from './loadPlace.js'
+import {filter} from './search.js'
 
 
 // obtaining elements from DOM
@@ -92,13 +92,13 @@ function fill(filtrado){
     const clone = template.content.cloneNode(true)
 
     let data= {
-      "id":item.location_id,
+            "id":item.location_id,
             "image":item.photo.images.small.url,
             "description":item.description,
             "latitude":item.latitude,
             "longitude":item.longitude
     }
-
+console.log(data)
     let send = encodeURIComponent(JSON.stringify(data));
     
 //modifying content elements in template
