@@ -27,7 +27,7 @@
                 <img src="image/logo.png" alt="logo">
             </figure>
             <h1>TOURIST EXPLORE</h1>
-            <a href="#"><span class="material-symbols-outlined" id="menuIcon">
+            <a href="#"><span class="menu material-symbols-outlined" id="menuIcon">
                     menu
                 </span>
             </a>
@@ -40,22 +40,24 @@
             <nav class="nav">
                 <a href="index.html">Home</a>
                 <a href="">Search</a>
-                <a href="">Favorites</a>
-                <a href="">Profile</a>
+                <a href="favorite.html">Favorites</a>
+                
             </nav>
         </div>
-
+<!--
         <div class="search">
             <input type="text">
             <a href="#">Search</a>
         </div>
-
+-->
 <article class="details">
 
 <div class="previewSite">
     <img id="image" alt="image for description">
 </div>
-<div class="detailSite" id="description"> </div>
+<div class="detailSite" id="description"> 
+   
+</div>
 
 <div class="thumbnails1Site">
     <img id ="minA" class="thumbnails" src="" alt="small picture" width="40px" >
@@ -74,10 +76,12 @@
     <img id ="minD" class="thumbnails" src="" alt="small picture" width="40px" >
 </div>
 
-<div class="saveSite">Save</div>
+<div class="saveSite"><a href="" id="btnFavorite">Save to favorites</a></div>
+
+
 
 </article>
-
+<div id="map"></div>
         
         <footer class="footer">
             CopyRight 2025. All right reserved
@@ -88,6 +92,7 @@
     </div>
     
     <script type="module" src="js/details.js"></script>
+    <script type="module" src="js/index.js"></script>
 
 </body>
 </html>

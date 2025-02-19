@@ -4,6 +4,5 @@ export function obj(name, matriz = false) {
     if (matriz) return document.querySelectorAll(name)
     // if matriz is false , it searches for ID firts or then for queryselector
     return document.getElementById(name) || document.querySelector(name)
-
 }
 

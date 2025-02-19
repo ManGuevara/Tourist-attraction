@@ -1,11 +1,12 @@
+// Asynchronous function to fetch images of a tourist attraction
 async function getImages(id){
-    console.log("Descargando Datos...")
+    
     const url = 'https://tourist-attraction.p.rapidapi.com/photos'
     const options = {
         method: 'POST',
         headers: {
-            'x-rapidapi-key': 'db121b7f58msh00824834efb239ep1c7638jsn9614ba6896aa',
-            'x-rapidapi-host': 'tourist-attraction.p.rapidapi.com',
+            'x-rapidapi-key': '56b011bfb4mshb1084ad76787c1ap1bc4fajsn1759e7f95d22', // API key for authentication
+            'x-rapidapi-host': 'tourist-attraction.p.rapidapi.com',  // API host
             'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: new URLSearchParams({
@@ -16,19 +17,19 @@ async function getImages(id){
         })
     };
 
-try {//intentamos
+try {//attempt to fetch data
 
 
     //Await usar fetch de manera sincrona
-	const response = await fetch(url, options);//Hacer el request
-	const result = await response.json();
+	const response = await fetch(url, options); // Make the request to the API
+	const result = await response.json();// Convert response to JSON format
 
 
-    return result
+    return result; // Return the fetched images data
 
-    } catch (error) {
+    } catch (error) {// Catch block to handle any request errors
 	console.error(error);
 }
  
 }
-export default getImages
+export default getImages; // Export the function to use it in other modules

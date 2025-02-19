@@ -11,9 +11,10 @@ html{
     font-size: 16px;
 }
 
-/*GENERAL CONTAINER OF THE PAGE, it is unside body INDEX CSS*/
+/*GENERAL CONTAINER OF THE PAGE, it is inside body INDEX CSS*/
 
 .container{
+    background-color: rgb(204, 197, 247);
     position: relative;
     overflow:hidden;
 }
@@ -49,7 +50,7 @@ header{
 
 /*hamburger buttom*/
 .menu{
-    position: absolute;
+    position: absolute; 
     right: 10px;
     top: 10px;
 }
@@ -85,9 +86,9 @@ header{
     text-decoration: none;
     color: white;
 }
-
-
-
+ .nav a:hover{
+color:yellow;
+ }
 
 
 .search{
@@ -101,6 +102,7 @@ header{
 /* seraching button */
 .search input{
     width: 100%;
+    border-radius: 10px;
 }
 
 .search>a{
@@ -111,6 +113,7 @@ header{
     background: #2E86AB ;
     color: white;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 /* CONTENT AREA IN INDEX.HTML (FILTERS, ITEMS(articles)) */
@@ -208,13 +211,35 @@ padding: 0 20px;
     text-align: justify;
 }
 
-.saveSite{
+.saveSite {
     grid-area: button;
     background: #F24236 ;
     color: white;
     text-align: center;
     line-height: 50px;
+    border-radius: 10px;
 }
+.saveSite a{
+color:white;
+text-decoration: none;
+}
+
+
+/*favorites*/
+ul{
+    list-style: none;
+  }
+  
+  .listFavorites{
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+    border: solid;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+
 
 /* FOOTER */
 .footer{
@@ -278,6 +303,8 @@ h1{
 
 @media screen and (min-width:1000px){
 
+
+    
     /* css rules for details.html (details area) page */
     .details{
         width: 100%;

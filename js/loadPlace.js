@@ -1,19 +1,17 @@
 //asyncronic function
 async function loadPlace() {
-    console.log("downloading data....") //testing data
-
-
+    
     const url = 'https://tourist-attraction.p.rapidapi.com/search'; //endpoint URL to search touristic attractions
 
     // HTTP request configuration
     const options = {
         method: 'POST',
         headers: {
-            'x-rapidapi-key': 'db121b7f58msh00824834efb239ep1c7638jsn9614ba6896aa',
-            'x-rapidapi-host': 'tourist-attraction.p.rapidapi.com',
+            'x-rapidapi-key': '56b011bfb4mshb1084ad76787c1ap1bc4fajsn1759e7f95d22', //API key for authentication
+            'x-rapidapi-host': 'tourist-attraction.p.rapidapi.com', //Host for API request
             'Content-Type': 'application/x-www-form-urlencoded'
         },
-        //request params
+        //request parameters sent in the body
         body: new URLSearchParams({
             location_id: '45963',
             language: 'en_US',
@@ -21,8 +19,6 @@ async function loadPlace() {
             offset: '0'
         })
     };
-
-
 
     try {
          const response = await fetch(url, options); //making request
@@ -34,7 +30,6 @@ async function loadPlace() {
     } catch (error) {
         console.error(error);
     }
-    console.log("....downloaded data") // testing
 }
 
 export default loadPlace;
